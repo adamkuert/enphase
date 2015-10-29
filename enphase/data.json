@@ -1,0 +1,45 @@
+{
+    "system_id": 752126,
+    "siteStatus": "normal",
+    "weather": {
+        "temperature": {
+            "display": "16°C",
+            "unit": "C",
+            "value": 16,
+            "mean": null,
+            "min": null,
+            "max": null
+        },
+        "date": "20151026",
+        "station": "KPDX",
+        "string": "Partly Cloudy",
+        "icon": "partlycloudy",
+        "code": "partlycloudy",
+        "url": "http://www.wunderground.com/cgi-bin/findweather/getForecast?query=KPDX"
+    },
+    "pending": null,
+    "start_date": "2015-10-26",
+    "end_date": "2015-10-26",
+    "energy": [
+               {
+               "start_time": 1445870700,
+               "interval_length": 900,
+               "production": [
+                              1,
+                              6,
+                              9,
+                              17,
+                              25,
+                              115,
+                              69,
+                              22,
+                              1
+                              ]
+               }
+               ],
+    "statusDetails": {
+        "reason": null,
+        "errorCount": 0,
+        "totalCount": 24
+    }
+}
