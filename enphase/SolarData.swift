@@ -66,15 +66,15 @@ class SolarData {
                     if let str = NSString(data: content!, encoding: NSUTF8StringEncoding) {
                         self.data = str as String
                         let total = self.getTotal()
-                        done(String(total))
-                        print("Received data")
+                        dispatch_async(dispatch_get_main_queue()) {
+                            done(String(total))
+                        }
                     }
                     else {
                         print("unable to convert data to text")
                     }
                 }
             })
-            
             task.resume()
         }
         else {

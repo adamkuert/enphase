@@ -32,7 +32,6 @@ class ViewController: UIViewController {
     
     func drawTotal(total: String){
         ui_text.text = total
-        print("done")
     }
 
     override func didReceiveMemoryWarning() {
