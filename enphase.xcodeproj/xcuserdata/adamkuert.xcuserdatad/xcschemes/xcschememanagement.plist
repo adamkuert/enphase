@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Complication - enphase WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Glance - enphase WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Notification - enphase WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>enphase WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>enphase.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,17 +32,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>74D7B13A1BDF16DF00A2B0CE</key>
+		<key>740F9A101BE34D6700035FB9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>74D7B14E1BDF16DF00A2B0CE</key>
+		<key>740F9A241BE34D6700035FB9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>74D7B1591BDF16DF00A2B0CE</key>
+		<key>740F9A2F1BE34D6700035FB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>740F9A381BE34D6700035FB9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

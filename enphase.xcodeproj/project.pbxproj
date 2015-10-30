@@ -7,62 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74D7B13F1BDF16DF00A2B0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7B13E1BDF16DF00A2B0CE /* AppDelegate.swift */; };
-		74D7B1411BDF16DF00A2B0CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7B1401BDF16DF00A2B0CE /* ViewController.swift */; };
-		74D7B1461BDF16DF00A2B0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D7B1451BDF16DF00A2B0CE /* Assets.xcassets */; };
-		74D7B1541BDF16DF00A2B0CE /* enphaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7B1531BDF16DF00A2B0CE /* enphaseTests.swift */; };
-		74D7B1731BDF4E9000A2B0CE /* SolarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7B1721BDF4E9000A2B0CE /* SolarData.swift */; };
-		74D7B1751BE0682600A2B0CE /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 74D7B1741BE0682600A2B0CE /* data.json */; };
-		74D7B1761BE0682600A2B0CE /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 74D7B1741BE0682600A2B0CE /* data.json */; };
+		740F9A151BE34D6700035FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A141BE34D6700035FB9 /* AppDelegate.swift */; };
+		740F9A171BE34D6700035FB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A161BE34D6700035FB9 /* ViewController.swift */; };
+		740F9A1C1BE34D6700035FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740F9A1B1BE34D6700035FB9 /* Assets.xcassets */; };
+		740F9A2A1BE34D6700035FB9 /* enphaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A291BE34D6700035FB9 /* enphaseTests.swift */; };
+		740F9A351BE34D6700035FB9 /* enphaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A341BE34D6700035FB9 /* enphaseUITests.swift */; };
+		740F9A3A1BE34D6700035FB9 /* enphase WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 740F9A391BE34D6700035FB9 /* enphase WatchKit App.app */; };
+		740F9A401BE34D6700035FB9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740F9A3E1BE34D6700035FB9 /* Interface.storyboard */; };
+		740F9A421BE34D6700035FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740F9A411BE34D6700035FB9 /* Assets.xcassets */; };
+		740F9A491BE34D6800035FB9 /* enphase WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 740F9A481BE34D6800035FB9 /* enphase WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		740F9A501BE34D6800035FB9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A4F1BE34D6800035FB9 /* InterfaceController.swift */; };
+		740F9A521BE34D6800035FB9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A511BE34D6800035FB9 /* ExtensionDelegate.swift */; };
+		740F9A541BE34D6800035FB9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A531BE34D6800035FB9 /* NotificationController.swift */; };
+		740F9A561BE34D6800035FB9 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A551BE34D6800035FB9 /* GlanceController.swift */; };
+		740F9A581BE34D6800035FB9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A571BE34D6800035FB9 /* ComplicationController.swift */; };
+		740F9A5A1BE34D6800035FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740F9A591BE34D6800035FB9 /* Assets.xcassets */; };
+		740F9A701BE34DAF00035FB9 /* SolarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A6F1BE34DAF00035FB9 /* SolarData.swift */; };
+		740F9A721BE34F2F00035FB9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 740F9A711BE34F2F00035FB9 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		74D7B1501BDF16DF00A2B0CE /* PBXContainerItemProxy */ = {
+		740F9A261BE34D6700035FB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 74D7B1331BDF16DF00A2B0CE /* Project object */;
+			containerPortal = 740F9A091BE34D6700035FB9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 74D7B13A1BDF16DF00A2B0CE;
+			remoteGlobalIDString = 740F9A101BE34D6700035FB9;
 			remoteInfo = enphase;
 		};
-		74D7B15B1BDF16DF00A2B0CE /* PBXContainerItemProxy */ = {
+		740F9A311BE34D6700035FB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 74D7B1331BDF16DF00A2B0CE /* Project object */;
+			containerPortal = 740F9A091BE34D6700035FB9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 74D7B13A1BDF16DF00A2B0CE;
+			remoteGlobalIDString = 740F9A101BE34D6700035FB9;
 			remoteInfo = enphase;
+		};
+		740F9A3B1BE34D6700035FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 740F9A091BE34D6700035FB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 740F9A381BE34D6700035FB9;
+			remoteInfo = "enphase WatchKit App";
+		};
+		740F9A4A1BE34D6800035FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 740F9A091BE34D6700035FB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 740F9A471BE34D6800035FB9;
+			remoteInfo = "enphase WatchKit Extension";
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		740F9A611BE34D6800035FB9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				740F9A491BE34D6800035FB9 /* enphase WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740F9A651BE34D6800035FB9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				740F9A3A1BE34D6700035FB9 /* enphase WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		74D7B13B1BDF16DF00A2B0CE /* enphase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enphase.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		74D7B13E1BDF16DF00A2B0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74D7B1401BDF16DF00A2B0CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		74D7B1451BDF16DF00A2B0CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74D7B14A1BDF16DF00A2B0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74D7B14F1BDF16DF00A2B0CE /* enphaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enphaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74D7B1531BDF16DF00A2B0CE /* enphaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enphaseTests.swift; sourceTree = "<group>"; };
-		74D7B1551BDF16DF00A2B0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74D7B15A1BDF16DF00A2B0CE /* enphaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enphaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74D7B1721BDF4E9000A2B0CE /* SolarData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarData.swift; sourceTree = "<group>"; };
-		74D7B1741BE0682600A2B0CE /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../enphase/data.json; sourceTree = "<group>"; };
+		740F9A111BE34D6700035FB9 /* enphase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enphase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		740F9A141BE34D6700035FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		740F9A161BE34D6700035FB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		740F9A1B1BE34D6700035FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		740F9A201BE34D6700035FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		740F9A251BE34D6700035FB9 /* enphaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enphaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		740F9A291BE34D6700035FB9 /* enphaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enphaseTests.swift; sourceTree = "<group>"; };
+		740F9A2B1BE34D6700035FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		740F9A301BE34D6700035FB9 /* enphaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enphaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		740F9A341BE34D6700035FB9 /* enphaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enphaseUITests.swift; sourceTree = "<group>"; };
+		740F9A361BE34D6700035FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		740F9A391BE34D6700035FB9 /* enphase WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "enphase WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		740F9A3F1BE34D6700035FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		740F9A411BE34D6700035FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		740F9A431BE34D6700035FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		740F9A481BE34D6800035FB9 /* enphase WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "enphase WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		740F9A4E1BE34D6800035FB9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		740F9A4F1BE34D6800035FB9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		740F9A511BE34D6800035FB9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		740F9A531BE34D6800035FB9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		740F9A551BE34D6800035FB9 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		740F9A571BE34D6800035FB9 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		740F9A591BE34D6800035FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		740F9A5B1BE34D6800035FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		740F9A6F1BE34DAF00035FB9 /* SolarData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarData.swift; sourceTree = "<group>"; };
+		740F9A711BE34F2F00035FB9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		74D7B1381BDF16DF00A2B0CE /* Frameworks */ = {
+		740F9A0E1BE34D6700035FB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74D7B14C1BDF16DF00A2B0CE /* Frameworks */ = {
+		740F9A221BE34D6700035FB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74D7B1571BDF16DF00A2B0CE /* Frameworks */ = {
+		740F9A2D1BE34D6700035FB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740F9A451BE34D6800035FB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,126 +143,221 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		74D7B1321BDF16DF00A2B0CE = {
+		740F9A081BE34D6700035FB9 = {
 			isa = PBXGroup;
 			children = (
-				74D7B13D1BDF16DF00A2B0CE /* enphase */,
-				74D7B1521BDF16DF00A2B0CE /* enphaseTests */,
-				74D7B13C1BDF16DF00A2B0CE /* Products */,
+				740F9A131BE34D6700035FB9 /* enphase */,
+				740F9A281BE34D6700035FB9 /* enphaseTests */,
+				740F9A331BE34D6700035FB9 /* enphaseUITests */,
+				740F9A3D1BE34D6700035FB9 /* enphase WatchKit App */,
+				740F9A4C1BE34D6800035FB9 /* enphase WatchKit Extension */,
+				740F9A121BE34D6700035FB9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		74D7B13C1BDF16DF00A2B0CE /* Products */ = {
+		740F9A121BE34D6700035FB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74D7B13B1BDF16DF00A2B0CE /* enphase.app */,
-				74D7B14F1BDF16DF00A2B0CE /* enphaseTests.xctest */,
-				74D7B15A1BDF16DF00A2B0CE /* enphaseUITests.xctest */,
+				740F9A111BE34D6700035FB9 /* enphase.app */,
+				740F9A251BE34D6700035FB9 /* enphaseTests.xctest */,
+				740F9A301BE34D6700035FB9 /* enphaseUITests.xctest */,
+				740F9A391BE34D6700035FB9 /* enphase WatchKit App.app */,
+				740F9A481BE34D6800035FB9 /* enphase WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		74D7B13D1BDF16DF00A2B0CE /* enphase */ = {
+		740F9A131BE34D6700035FB9 /* enphase */ = {
 			isa = PBXGroup;
 			children = (
-				74D7B13E1BDF16DF00A2B0CE /* AppDelegate.swift */,
-				74D7B1401BDF16DF00A2B0CE /* ViewController.swift */,
-				74D7B1451BDF16DF00A2B0CE /* Assets.xcassets */,
-				74D7B14A1BDF16DF00A2B0CE /* Info.plist */,
-				74D7B1721BDF4E9000A2B0CE /* SolarData.swift */,
+				740F9A141BE34D6700035FB9 /* AppDelegate.swift */,
+				740F9A161BE34D6700035FB9 /* ViewController.swift */,
+				740F9A1B1BE34D6700035FB9 /* Assets.xcassets */,
+				740F9A6F1BE34DAF00035FB9 /* SolarData.swift */,
+				740F9A201BE34D6700035FB9 /* Info.plist */,
 			);
 			path = enphase;
 			sourceTree = "<group>";
 		};
-		74D7B1521BDF16DF00A2B0CE /* enphaseTests */ = {
+		740F9A281BE34D6700035FB9 /* enphaseTests */ = {
 			isa = PBXGroup;
 			children = (
-				74D7B1741BE0682600A2B0CE /* data.json */,
-				74D7B1531BDF16DF00A2B0CE /* enphaseTests.swift */,
-				74D7B1551BDF16DF00A2B0CE /* Info.plist */,
+				740F9A711BE34F2F00035FB9 /* data.json */,
+				740F9A291BE34D6700035FB9 /* enphaseTests.swift */,
+				740F9A2B1BE34D6700035FB9 /* Info.plist */,
 			);
 			path = enphaseTests;
+			sourceTree = "<group>";
+		};
+		740F9A331BE34D6700035FB9 /* enphaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				740F9A341BE34D6700035FB9 /* enphaseUITests.swift */,
+				740F9A361BE34D6700035FB9 /* Info.plist */,
+			);
+			path = enphaseUITests;
+			sourceTree = "<group>";
+		};
+		740F9A3D1BE34D6700035FB9 /* enphase WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				740F9A3E1BE34D6700035FB9 /* Interface.storyboard */,
+				740F9A411BE34D6700035FB9 /* Assets.xcassets */,
+				740F9A431BE34D6700035FB9 /* Info.plist */,
+			);
+			path = "enphase WatchKit App";
+			sourceTree = "<group>";
+		};
+		740F9A4C1BE34D6800035FB9 /* enphase WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				740F9A4F1BE34D6800035FB9 /* InterfaceController.swift */,
+				740F9A511BE34D6800035FB9 /* ExtensionDelegate.swift */,
+				740F9A531BE34D6800035FB9 /* NotificationController.swift */,
+				740F9A551BE34D6800035FB9 /* GlanceController.swift */,
+				740F9A571BE34D6800035FB9 /* ComplicationController.swift */,
+				740F9A591BE34D6800035FB9 /* Assets.xcassets */,
+				740F9A5B1BE34D6800035FB9 /* Info.plist */,
+				740F9A4D1BE34D6800035FB9 /* Supporting Files */,
+			);
+			path = "enphase WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		740F9A4D1BE34D6800035FB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				740F9A4E1BE34D6800035FB9 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		74D7B13A1BDF16DF00A2B0CE /* enphase */ = {
+		740F9A101BE34D6700035FB9 /* enphase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74D7B1631BDF16DF00A2B0CE /* Build configuration list for PBXNativeTarget "enphase" */;
+			buildConfigurationList = 740F9A661BE34D6800035FB9 /* Build configuration list for PBXNativeTarget "enphase" */;
 			buildPhases = (
-				74D7B1371BDF16DF00A2B0CE /* Sources */,
-				74D7B1381BDF16DF00A2B0CE /* Frameworks */,
-				74D7B1391BDF16DF00A2B0CE /* Resources */,
+				740F9A0D1BE34D6700035FB9 /* Sources */,
+				740F9A0E1BE34D6700035FB9 /* Frameworks */,
+				740F9A0F1BE34D6700035FB9 /* Resources */,
+				740F9A651BE34D6800035FB9 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				740F9A3C1BE34D6700035FB9 /* PBXTargetDependency */,
 			);
 			name = enphase;
 			productName = enphase;
-			productReference = 74D7B13B1BDF16DF00A2B0CE /* enphase.app */;
+			productReference = 740F9A111BE34D6700035FB9 /* enphase.app */;
 			productType = "com.apple.product-type.application";
 		};
-		74D7B14E1BDF16DF00A2B0CE /* enphaseTests */ = {
+		740F9A241BE34D6700035FB9 /* enphaseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74D7B1661BDF16DF00A2B0CE /* Build configuration list for PBXNativeTarget "enphaseTests" */;
+			buildConfigurationList = 740F9A691BE34D6800035FB9 /* Build configuration list for PBXNativeTarget "enphaseTests" */;
 			buildPhases = (
-				74D7B14B1BDF16DF00A2B0CE /* Sources */,
-				74D7B14C1BDF16DF00A2B0CE /* Frameworks */,
-				74D7B14D1BDF16DF00A2B0CE /* Resources */,
+				740F9A211BE34D6700035FB9 /* Sources */,
+				740F9A221BE34D6700035FB9 /* Frameworks */,
+				740F9A231BE34D6700035FB9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				74D7B1511BDF16DF00A2B0CE /* PBXTargetDependency */,
+				740F9A271BE34D6700035FB9 /* PBXTargetDependency */,
 			);
 			name = enphaseTests;
 			productName = enphaseTests;
-			productReference = 74D7B14F1BDF16DF00A2B0CE /* enphaseTests.xctest */;
+			productReference = 740F9A251BE34D6700035FB9 /* enphaseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		74D7B1591BDF16DF00A2B0CE /* enphaseUITests */ = {
+		740F9A2F1BE34D6700035FB9 /* enphaseUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74D7B1691BDF16DF00A2B0CE /* Build configuration list for PBXNativeTarget "enphaseUITests" */;
+			buildConfigurationList = 740F9A6C1BE34D6800035FB9 /* Build configuration list for PBXNativeTarget "enphaseUITests" */;
 			buildPhases = (
-				74D7B1561BDF16DF00A2B0CE /* Sources */,
-				74D7B1571BDF16DF00A2B0CE /* Frameworks */,
-				74D7B1581BDF16DF00A2B0CE /* Resources */,
+				740F9A2C1BE34D6700035FB9 /* Sources */,
+				740F9A2D1BE34D6700035FB9 /* Frameworks */,
+				740F9A2E1BE34D6700035FB9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				74D7B15C1BDF16DF00A2B0CE /* PBXTargetDependency */,
+				740F9A321BE34D6700035FB9 /* PBXTargetDependency */,
 			);
 			name = enphaseUITests;
 			productName = enphaseUITests;
-			productReference = 74D7B15A1BDF16DF00A2B0CE /* enphaseUITests.xctest */;
+			productReference = 740F9A301BE34D6700035FB9 /* enphaseUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		740F9A381BE34D6700035FB9 /* enphase WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740F9A621BE34D6800035FB9 /* Build configuration list for PBXNativeTarget "enphase WatchKit App" */;
+			buildPhases = (
+				740F9A371BE34D6700035FB9 /* Resources */,
+				740F9A611BE34D6800035FB9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				740F9A4B1BE34D6800035FB9 /* PBXTargetDependency */,
+			);
+			name = "enphase WatchKit App";
+			productName = "enphase WatchKit App";
+			productReference = 740F9A391BE34D6700035FB9 /* enphase WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		740F9A471BE34D6800035FB9 /* enphase WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740F9A5E1BE34D6800035FB9 /* Build configuration list for PBXNativeTarget "enphase WatchKit Extension" */;
+			buildPhases = (
+				740F9A441BE34D6800035FB9 /* Sources */,
+				740F9A451BE34D6800035FB9 /* Frameworks */,
+				740F9A461BE34D6800035FB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "enphase WatchKit Extension";
+			productName = "enphase WatchKit Extension";
+			productReference = 740F9A481BE34D6800035FB9 /* enphase WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		74D7B1331BDF16DF00A2B0CE /* Project object */ = {
+		740F9A091BE34D6700035FB9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Adam Kuert";
 				TargetAttributes = {
-					74D7B13A1BDF16DF00A2B0CE = {
-						CreatedOnToolsVersion = 7.0.1;
+					740F9A101BE34D6700035FB9 = {
+						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 8H63CHHEE5;
 					};
-					74D7B14E1BDF16DF00A2B0CE = {
-						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = 74D7B13A1BDF16DF00A2B0CE;
+					740F9A241BE34D6700035FB9 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 8H63CHHEE5;
+						TestTargetID = 740F9A101BE34D6700035FB9;
 					};
-					74D7B1591BDF16DF00A2B0CE = {
-						CreatedOnToolsVersion = 7.0.1;
+					740F9A2F1BE34D6700035FB9 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 8H63CHHEE5;
+						TestTargetID = 740F9A101BE34D6700035FB9;
+					};
+					740F9A381BE34D6700035FB9 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 8H63CHHEE5;
+					};
+					740F9A471BE34D6800035FB9 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 8H63CHHEE5;
 					};
 				};
 			};
-			buildConfigurationList = 74D7B1361BDF16DF00A2B0CE /* Build configuration list for PBXProject "enphase" */;
+			buildConfigurationList = 740F9A0C1BE34D6700035FB9 /* Build configuration list for PBXProject "enphase" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -199,88 +365,140 @@
 				en,
 				Base,
 			);
-			mainGroup = 74D7B1321BDF16DF00A2B0CE;
-			productRefGroup = 74D7B13C1BDF16DF00A2B0CE /* Products */;
+			mainGroup = 740F9A081BE34D6700035FB9;
+			productRefGroup = 740F9A121BE34D6700035FB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74D7B13A1BDF16DF00A2B0CE /* enphase */,
-				74D7B14E1BDF16DF00A2B0CE /* enphaseTests */,
-				74D7B1591BDF16DF00A2B0CE /* enphaseUITests */,
+				740F9A101BE34D6700035FB9 /* enphase */,
+				740F9A241BE34D6700035FB9 /* enphaseTests */,
+				740F9A2F1BE34D6700035FB9 /* enphaseUITests */,
+				740F9A381BE34D6700035FB9 /* enphase WatchKit App */,
+				740F9A471BE34D6800035FB9 /* enphase WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		74D7B1391BDF16DF00A2B0CE /* Resources */ = {
+		740F9A0F1BE34D6700035FB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D7B1461BDF16DF00A2B0CE /* Assets.xcassets in Resources */,
-				74D7B1751BE0682600A2B0CE /* data.json in Resources */,
+				740F9A1C1BE34D6700035FB9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74D7B14D1BDF16DF00A2B0CE /* Resources */ = {
+		740F9A231BE34D6700035FB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D7B1761BE0682600A2B0CE /* data.json in Resources */,
+				740F9A721BE34F2F00035FB9 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74D7B1581BDF16DF00A2B0CE /* Resources */ = {
+		740F9A2E1BE34D6700035FB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740F9A371BE34D6700035FB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740F9A421BE34D6700035FB9 /* Assets.xcassets in Resources */,
+				740F9A401BE34D6700035FB9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740F9A461BE34D6800035FB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740F9A5A1BE34D6800035FB9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		74D7B1371BDF16DF00A2B0CE /* Sources */ = {
+		740F9A0D1BE34D6700035FB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D7B1731BDF4E9000A2B0CE /* SolarData.swift in Sources */,
-				74D7B1411BDF16DF00A2B0CE /* ViewController.swift in Sources */,
-				74D7B13F1BDF16DF00A2B0CE /* AppDelegate.swift in Sources */,
+				740F9A701BE34DAF00035FB9 /* SolarData.swift in Sources */,
+				740F9A171BE34D6700035FB9 /* ViewController.swift in Sources */,
+				740F9A151BE34D6700035FB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74D7B14B1BDF16DF00A2B0CE /* Sources */ = {
+		740F9A211BE34D6700035FB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D7B1541BDF16DF00A2B0CE /* enphaseTests.swift in Sources */,
+				740F9A2A1BE34D6700035FB9 /* enphaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74D7B1561BDF16DF00A2B0CE /* Sources */ = {
+		740F9A2C1BE34D6700035FB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740F9A351BE34D6700035FB9 /* enphaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740F9A441BE34D6800035FB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740F9A541BE34D6800035FB9 /* NotificationController.swift in Sources */,
+				740F9A521BE34D6800035FB9 /* ExtensionDelegate.swift in Sources */,
+				740F9A581BE34D6800035FB9 /* ComplicationController.swift in Sources */,
+				740F9A501BE34D6800035FB9 /* InterfaceController.swift in Sources */,
+				740F9A561BE34D6800035FB9 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		74D7B1511BDF16DF00A2B0CE /* PBXTargetDependency */ = {
+		740F9A271BE34D6700035FB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 74D7B13A1BDF16DF00A2B0CE /* enphase */;
-			targetProxy = 74D7B1501BDF16DF00A2B0CE /* PBXContainerItemProxy */;
+			target = 740F9A101BE34D6700035FB9 /* enphase */;
+			targetProxy = 740F9A261BE34D6700035FB9 /* PBXContainerItemProxy */;
 		};
-		74D7B15C1BDF16DF00A2B0CE /* PBXTargetDependency */ = {
+		740F9A321BE34D6700035FB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 74D7B13A1BDF16DF00A2B0CE /* enphase */;
-			targetProxy = 74D7B15B1BDF16DF00A2B0CE /* PBXContainerItemProxy */;
+			target = 740F9A101BE34D6700035FB9 /* enphase */;
+			targetProxy = 740F9A311BE34D6700035FB9 /* PBXContainerItemProxy */;
+		};
+		740F9A3C1BE34D6700035FB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 740F9A381BE34D6700035FB9 /* enphase WatchKit App */;
+			targetProxy = 740F9A3B1BE34D6700035FB9 /* PBXContainerItemProxy */;
+		};
+		740F9A4B1BE34D6800035FB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 740F9A471BE34D6800035FB9 /* enphase WatchKit Extension */;
+			targetProxy = 740F9A4A1BE34D6800035FB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		740F9A3E1BE34D6700035FB9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				740F9A3F1BE34D6700035FB9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		74D7B1611BDF16DF00A2B0CE /* Debug */ = {
+		740F9A5C1BE34D6800035FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -316,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +543,7 @@
 			};
 			name = Debug;
 		};
-		74D7B1621BDF16DF00A2B0CE /* Release */ = {
+		740F9A5D1BE34D6800035FB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -355,7 +573,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,35 +581,91 @@
 			};
 			name = Release;
 		};
-		74D7B1641BDF16DF00A2B0CE /* Debug */ = {
+		740F9A5F1BE34D6800035FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = enphase/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.kuert.enphase;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "enphase WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.kuert.enphase.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		74D7B1651BDF16DF00A2B0CE /* Release */ = {
+		740F9A601BE34D6800035FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "enphase WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.kuert.enphase.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		740F9A631BE34D6800035FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = enphase_WatchKit_Extension;
+				INFOPLIST_FILE = "enphase WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.kuert.enphase.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		740F9A641BE34D6800035FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = enphase_WatchKit_Extension;
+				INFOPLIST_FILE = "enphase WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.kuert.enphase.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		740F9A671BE34D6800035FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = enphase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.kuert.enphase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		740F9A681BE34D6800035FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = enphase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.kuert.enphase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		74D7B1671BDF16DF00A2B0CE /* Debug */ = {
+		740F9A6A1BE34D6800035FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -403,7 +677,7 @@
 			};
 			name = Debug;
 		};
-		74D7B1681BDF16DF00A2B0CE /* Release */ = {
+		740F9A6B1BE34D6800035FB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,26 +689,26 @@
 			};
 			name = Release;
 		};
-		74D7B16A1BDF16DF00A2B0CE /* Debug */ = {
+		740F9A6D1BE34D6800035FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = enphaseUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.kuert.enphaseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				TEST_TARGET_NAME = enphase;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
 		};
-		74D7B16B1BDF16DF00A2B0CE /* Release */ = {
+		740F9A6E1BE34D6800035FB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = enphaseUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.kuert.enphaseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				TEST_TARGET_NAME = enphase;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
@@ -442,43 +716,61 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74D7B1361BDF16DF00A2B0CE /* Build configuration list for PBXProject "enphase" */ = {
+		740F9A0C1BE34D6700035FB9 /* Build configuration list for PBXProject "enphase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74D7B1611BDF16DF00A2B0CE /* Debug */,
-				74D7B1621BDF16DF00A2B0CE /* Release */,
+				740F9A5C1BE34D6800035FB9 /* Debug */,
+				740F9A5D1BE34D6800035FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74D7B1631BDF16DF00A2B0CE /* Build configuration list for PBXNativeTarget "enphase" */ = {
+		740F9A5E1BE34D6800035FB9 /* Build configuration list for PBXNativeTarget "enphase WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74D7B1641BDF16DF00A2B0CE /* Debug */,
-				74D7B1651BDF16DF00A2B0CE /* Release */,
+				740F9A5F1BE34D6800035FB9 /* Debug */,
+				740F9A601BE34D6800035FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74D7B1661BDF16DF00A2B0CE /* Build configuration list for PBXNativeTarget "enphaseTests" */ = {
+		740F9A621BE34D6800035FB9 /* Build configuration list for PBXNativeTarget "enphase WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74D7B1671BDF16DF00A2B0CE /* Debug */,
-				74D7B1681BDF16DF00A2B0CE /* Release */,
+				740F9A631BE34D6800035FB9 /* Debug */,
+				740F9A641BE34D6800035FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74D7B1691BDF16DF00A2B0CE /* Build configuration list for PBXNativeTarget "enphaseUITests" */ = {
+		740F9A661BE34D6800035FB9 /* Build configuration list for PBXNativeTarget "enphase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74D7B16A1BDF16DF00A2B0CE /* Debug */,
-				74D7B16B1BDF16DF00A2B0CE /* Release */,
+				740F9A671BE34D6800035FB9 /* Debug */,
+				740F9A681BE34D6800035FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		740F9A691BE34D6800035FB9 /* Build configuration list for PBXNativeTarget "enphaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740F9A6A1BE34D6800035FB9 /* Debug */,
+				740F9A6B1BE34D6800035FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		740F9A6C1BE34D6800035FB9 /* Build configuration list for PBXNativeTarget "enphaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740F9A6D1BE34D6800035FB9 /* Debug */,
+				740F9A6E1BE34D6800035FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 74D7B1331BDF16DF00A2B0CE /* Project object */;
+	rootObject = 740F9A091BE34D6700035FB9 /* Project object */;
 }

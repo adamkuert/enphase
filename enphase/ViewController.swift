@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     func drawTotal(total: String){
         ui_text.text = total
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
