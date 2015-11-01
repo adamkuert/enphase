@@ -16,6 +16,7 @@ class ViewController: UIViewController, WCSessionDelegate {
     let solar_data = SolarData()
     
     @IBOutlet weak var ui_label_total: UILabel!
+    @IBOutlet weak var ui_button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +28,15 @@ class ViewController: UIViewController, WCSessionDelegate {
             session.activateSession()
         }
         
+        getData()
+    }
+    
+    func getData(){
         ui_label_total.text = "fetching..."
-        
         solar_data.getData(withCallback: handleResult)
+    }
+    @IBAction func buttonPressed(sender: UIButton) {
+        getData()
     }
     
     func handleResult(result: NSDictionary){

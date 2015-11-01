@@ -45,14 +45,24 @@
                                     <constraint firstItem="ns1-Og-5DD" firstAttribute="centerY" secondItem="XrC-Cn-vqR" secondAttribute="centerY" id="x5h-AL-fDz"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKA-sf-ICW">
+                                <rect key="frame" x="207" y="423" width="186" height="57"/>
+                                <animations/>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="xwa-hl-k6W" eventType="touchUpInside" id="FIB-vB-GKT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XrC-Cn-vqR" firstAttribute="centerX" secondItem="8tA-fv-XOB" secondAttribute="centerX" id="HRP-dd-MZX"/>
+                            <constraint firstItem="XKA-sf-ICW" firstAttribute="centerX" secondItem="8tA-fv-XOB" secondAttribute="centerX" id="P9z-B6-xDM"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ui_button" destination="XKA-sf-ICW" id="Vlq-w6-Aq9"/>
                         <outlet property="ui_label_total" destination="aUX-VY-FRU" id="wSG-OZ-DJo"/>
                         <outletCollection property="ui_label_total" destination="aUX-VY-FRU" id="Fzu-Kg-afC"/>
                     </connections>
