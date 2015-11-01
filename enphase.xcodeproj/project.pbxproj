@@ -24,6 +24,8 @@
 		740F9A5A1BE34D6800035FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740F9A591BE34D6800035FB9 /* Assets.xcassets */; };
 		740F9A701BE34DAF00035FB9 /* SolarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A6F1BE34DAF00035FB9 /* SolarData.swift */; };
 		740F9A721BE34F2F00035FB9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 740F9A711BE34F2F00035FB9 /* data.json */; };
+		74D28D9E1BE54D380086B3A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D28D9D1BE54D380086B3A1 /* LaunchScreen.storyboard */; };
+		74D28DA01BE54E150086B3A1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D28D9F1BE54E150086B3A1 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		740F9A5B1BE34D6800035FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		740F9A6F1BE34DAF00035FB9 /* SolarData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarData.swift; sourceTree = "<group>"; };
 		740F9A711BE34F2F00035FB9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		74D28D9D1BE54D380086B3A1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74D28D9F1BE54E150086B3A1 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 				740F9A1B1BE34D6700035FB9 /* Assets.xcassets */,
 				740F9A6F1BE34DAF00035FB9 /* SolarData.swift */,
 				740F9A201BE34D6700035FB9 /* Info.plist */,
+				74D28D9D1BE54D380086B3A1 /* LaunchScreen.storyboard */,
+				74D28D9F1BE54E150086B3A1 /* Storyboard.storyboard */,
 			);
 			path = enphase;
 			sourceTree = "<group>";
@@ -384,7 +390,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D28D9E1BE54D380086B3A1 /* LaunchScreen.storyboard in Resources */,
 				740F9A1C1BE34D6700035FB9 /* Assets.xcassets in Resources */,
+				74D28DA01BE54E150086B3A1 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

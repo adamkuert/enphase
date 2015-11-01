@@ -7,6 +7,7 @@
 //
 
 import ClockKit
+import WatchKit
 
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
@@ -18,11 +19,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
     
     func getTimelineStartDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
-        handler(nil)
+        handler(NSDate(timeInterval: -1*10*60*60, sinceDate: NSDate()))
     }
     
     func getTimelineEndDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
-        handler(nil)
+        handler(NSDate())
     }
     
     func getPrivacyBehaviorForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationPrivacyBehavior) -> Void) {
@@ -34,9 +35,14 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getCurrentTimelineEntryForComplication(complication: CLKComplication, withHandler handler: ((CLKComplicationTimelineEntry?) -> Void)) {
         // Call the handler with the current timeline entry
         if complication.family == .ModularSmall {
+            print("get current entry")
+            let delegate = WKExtension.sharedExtension().delegate as! ExtensionDelegate
+            var text = "--"
+            if let data = delegate.complicationData{
+                text = data
+            }
             let template = CLKComplicationTemplateModularSmallSimpleText()
-            template.textProvider = CLKSimpleTextProvider(text: "--")
-            
+            template.textProvider = CLKSimpleTextProvider(text: text)
             let timelineEntry = CLKComplicationTimelineEntry(date: NSDate(), complicationTemplate: template)
             handler(timelineEntry)
         } else {
@@ -47,8 +53,9 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getTimelineEntriesForComplication(complication: CLKComplication, beforeDate date: NSDate, limit: Int, withHandler handler: (([CLKComplicationTimelineEntry]?) -> Void)) {
         // Call the handler with the timeline entries prior to the given date
         if complication.family == .ModularSmall {
+            print("get enties")
             var entries = [CLKComplicationTimelineEntry]()
-            for x in 1...limit {
+            for x in 1...10 {
                 let template = CLKComplicationTemplateModularSmallSimpleText()
                 let d = NSDate(timeInterval: -1*Double(x)*60*60, sinceDate: date)
                 let calendar = NSCalendar.currentCalendar()
@@ -74,6 +81,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         // Call the handler with the date when you would next like to be given the opportunity to update your complication content
 
         // Every 30 mins
+        print("Every 30 mins")
         handler(NSDate(timeIntervalSinceNow: 60*30))
     }
     
@@ -84,6 +92,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         var template: CLKComplicationTemplate? = nil
         switch complication.family {
         case .ModularSmall:
+            print("get template")
             let modularTemplate = CLKComplicationTemplateModularSmallSimpleText()
             modularTemplate.textProvider = CLKSimpleTextProvider(text: "--")
             template = modularTemplate

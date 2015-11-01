@@ -7,31 +7,54 @@
 //
 
 import UIKit
+import WatchConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WCSessionDelegate {
+    
+    var session: WCSession!
     
     let solar_data = SolarData()
-    var ui_text = UITextField()
+    
+    @IBOutlet weak var ui_label_total: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let sub_view = UIView(frame: UIScreen.mainScreen().bounds)
-        sub_view.backgroundColor = UIColor.whiteColor()
-        self.view.addSubview(sub_view)
+        if (WCSession.isSupported()) {
+            session = WCSession.defaultSession()
+            session.delegate = self;
+            session.activateSession()
+        }
         
-        ui_text = UITextField(frame: CGRectMake(100, 100, 100, 50))
-        ui_text.text = "fetching..."
-        ui_text.textAlignment = .Center
-        ui_text.textColor = UIColor.blackColor()
-        sub_view.addSubview(ui_text)
+        ui_label_total.text = "fetching..."
         
-        solar_data.getData(withCallback: drawTotal)
+        solar_data.getData(withCallback: handleResult)
     }
     
-    func drawTotal(total: String){
-        ui_text.text = total
+    func handleResult(result: NSDictionary){
+//        let watts = solar_data.getTotal(result)
+        let watts = arc4random_uniform(10000)
+        print("Fetched \(watts) watts")
+        let kilowatts = String(format: "%.1f", Double(watts)/1000)
+        
+        // Update App UI
+        ui_label_total.text = "\(kilowatts) kWh"
+        
+        // Update Watch Data
+        sendData(String(watts))
+        
+    }
+    
+    func sendData(data: String){
+        let context = ["data": data]
+        print("Sending data: \(data)")
+        do {
+            try session.updateApplicationContext(context)
+        } catch let error {
+            print("Failed to set session context")
+            print(error)
+        }
     }
     
     override func didReceiveMemoryWarning() {

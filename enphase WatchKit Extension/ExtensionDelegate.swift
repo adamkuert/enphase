@@ -7,11 +7,37 @@
 //
 
 import WatchKit
+import ClockKit
+import WatchConnectivity
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
+    
+    var session: WCSession!
+    
+    var complicationData: String!
 
+    override init() {
+        super.init()
+        if (WCSession.isSupported()) {
+            session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
+        }
+    }
+    
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+    }
+    
+    func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]) {
+        print(applicationContext)
+        complicationData = applicationContext["data"] as? String
+        
+        if let server = CLKComplicationServer.sharedInstance(){
+            for comp in server.activeComplications{
+                server.reloadTimelineForComplication(comp)
+            }
+        }
     }
 
     func applicationDidBecomeActive() {
