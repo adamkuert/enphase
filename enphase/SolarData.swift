@@ -10,8 +10,8 @@ import Foundation
 
 
 class SolarData {
-//    let data_url = "https://enlighten.enphaseenergy.com/pv/public_systems/752126/today"
-    let data_url = "http://files.kuert.net/enphase/data.json"
+    let data_url = "https://enlighten.enphaseenergy.com/pv/public_systems/752126/today"
+//    let data_url = "http://files.kuert.net/enphase/data.json"
     
     init() {}
     

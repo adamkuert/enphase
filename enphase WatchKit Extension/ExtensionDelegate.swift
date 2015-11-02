@@ -30,7 +30,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     }
     
     func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]) {
-        print(applicationContext)
+        print("Received \(applicationContext)")
         complicationData = applicationContext["data"] as? String
         
         if let server = CLKComplicationServer.sharedInstance(){

@@ -35,13 +35,14 @@ class ViewController: UIViewController, WCSessionDelegate {
         ui_label_total.text = "fetching..."
         solar_data.getData(withCallback: handleResult)
     }
+    
     @IBAction func buttonPressed(sender: UIButton) {
         getData()
     }
     
     func handleResult(result: NSDictionary){
-//        let watts = solar_data.getTotal(result)
-        let watts = arc4random_uniform(10000)
+        let watts = solar_data.getTotal(result)
+//        let watts = arc4random_uniform(10000)
         print("Fetched \(watts) watts")
         let kilowatts = String(format: "%.1f", Double(watts)/1000)
         

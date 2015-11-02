@@ -39,7 +39,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let delegate = WKExtension.sharedExtension().delegate as! ExtensionDelegate
             var text = "--"
             if let data = delegate.complicationData{
-                text = data
+                text = String(format: "%.1f", Double(data)!/1000)
             }
             let template = CLKComplicationTemplateModularSmallSimpleText()
             template.textProvider = CLKSimpleTextProvider(text: text)
@@ -80,9 +80,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getNextRequestedUpdateDateWithHandler(handler: (NSDate?) -> Void) {
         // Call the handler with the date when you would next like to be given the opportunity to update your complication content
 
-        // Every 30 mins
-        print("Every 30 mins")
-        handler(NSDate(timeIntervalSinceNow: 60*30))
+        // Every 15 mins
+        handler(NSDate(timeIntervalSinceNow: 60*15))
     }
     
     // MARK: - Placeholder Templates

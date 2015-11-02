@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Every 15 mins
+        UIApplication.sharedApplication().setMinimumBackgroundFetchInterval(60*15)
         return true
+    }
+    
+    func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        if let vc = window?.rootViewController as? ViewController{
+            vc.getData()
+        }
+        completionHandler(.NewData)
     }
     
     func applicationWillResignActive(application: UIApplication) {

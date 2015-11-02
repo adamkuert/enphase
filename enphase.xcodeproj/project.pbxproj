@@ -342,6 +342,11 @@
 					740F9A101BE34D6700035FB9 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 8H63CHHEE5;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					740F9A241BE34D6700035FB9 = {
 						CreatedOnToolsVersion = 7.1;
