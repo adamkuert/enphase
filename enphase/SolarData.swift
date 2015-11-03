@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 class SolarData {
     let data_url = "https://enlighten.enphaseenergy.com/pv/public_systems/752126/today"
@@ -48,7 +48,7 @@ class SolarData {
         return total
     }
     
-    func getData(withCallback done: (NSDictionary) -> Void) {
+    func getData(withCallback callback: (NSDictionary) -> Void) {
         if let url = NSURL(string: data_url) {
             
             let session = NSURLSession.sharedSession()
@@ -61,7 +61,7 @@ class SolarData {
                     if let str = NSString(data: content!, encoding: NSUTF8StringEncoding) {
                         let dict = self.jsonAsDictionary(str as String)
                         dispatch_async(dispatch_get_main_queue()) {
-                            done(dict)
+                            callback(dict)
                         }
                     }
                     else {

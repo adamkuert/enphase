@@ -31,9 +31,17 @@ class ViewController: UIViewController, WCSessionDelegate {
         getData()
     }
     
-    func getData(){
+    func getData() {
         ui_label_total.text = "fetching..."
         solar_data.getData(withCallback: handleResult)
+    }
+    
+    func getDataFromBackground(withCompletionHandler completionHandler: (UIBackgroundFetchResult)-> Void){
+        ui_label_total.text = "fetching..."
+        solar_data.getData(withCallback: { (result: NSDictionary) -> Void in
+            self.handleResult(result)
+            completionHandler(.NewData)
+        })
     }
     
     @IBAction func buttonPressed(sender: UIButton) {

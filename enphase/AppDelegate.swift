@@ -21,10 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
-        if let vc = window?.rootViewController as? ViewController{
-            vc.getData()
+        print("Background fetch")
+        if let vc = window?.rootViewController as? ViewController {
+            vc.getDataFromBackground(withCompletionHandler: completionHandler)
         }
-        completionHandler(.NewData)
     }
     
     func applicationWillResignActive(application: UIApplication) {
@@ -39,6 +39,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        print("Entering foreground")
+        if let vc = window?.rootViewController as? ViewController {
+            vc.getData()
+        }
     }
     
     func applicationDidBecomeActive(application: UIApplication) {

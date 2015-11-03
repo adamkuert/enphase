@@ -53,7 +53,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getTimelineEntriesForComplication(complication: CLKComplication, beforeDate date: NSDate, limit: Int, withHandler handler: (([CLKComplicationTimelineEntry]?) -> Void)) {
         // Call the handler with the timeline entries prior to the given date
         if complication.family == .ModularSmall {
-            print("get enties")
             var entries = [CLKComplicationTimelineEntry]()
             for x in 1...10 {
                 let template = CLKComplicationTemplateModularSmallSimpleText()
