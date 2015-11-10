@@ -76,7 +76,6 @@ class SolarData {
                 if error != nil {
                     print("error: \(error!.localizedDescription): \(error!.userInfo)")
                 } else if content != nil {
-                    print(content)
                     if let str = NSString(data: content!, encoding: NSUTF8StringEncoding) {
                         let dict = self.jsonAsDictionary(str as String)
                         callback(dict)
