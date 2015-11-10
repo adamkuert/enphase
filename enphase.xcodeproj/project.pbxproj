@@ -22,8 +22,9 @@
 		740F9A561BE34D6800035FB9 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A551BE34D6800035FB9 /* GlanceController.swift */; };
 		740F9A581BE34D6800035FB9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A571BE34D6800035FB9 /* ComplicationController.swift */; };
 		740F9A5A1BE34D6800035FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740F9A591BE34D6800035FB9 /* Assets.xcassets */; };
-		740F9A701BE34DAF00035FB9 /* SolarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A6F1BE34DAF00035FB9 /* SolarData.swift */; };
 		740F9A721BE34F2F00035FB9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 740F9A711BE34F2F00035FB9 /* data.json */; };
+		74AB295A1BEC7C0300799C7C /* SolarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A6F1BE34DAF00035FB9 /* SolarData.swift */; };
+		74AB295B1BEC7C1A00799C7C /* SolarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F9A6F1BE34DAF00035FB9 /* SolarData.swift */; };
 		74D28D9E1BE54D380086B3A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D28D9D1BE54D380086B3A1 /* LaunchScreen.storyboard */; };
 		74D28DA01BE54E150086B3A1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D28D9F1BE54E150086B3A1 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -176,8 +177,8 @@
 			children = (
 				740F9A141BE34D6700035FB9 /* AppDelegate.swift */,
 				740F9A161BE34D6700035FB9 /* ViewController.swift */,
-				740F9A1B1BE34D6700035FB9 /* Assets.xcassets */,
 				740F9A6F1BE34DAF00035FB9 /* SolarData.swift */,
+				740F9A1B1BE34D6700035FB9 /* Assets.xcassets */,
 				740F9A201BE34D6700035FB9 /* Info.plist */,
 				74D28D9D1BE54D380086B3A1 /* LaunchScreen.storyboard */,
 				74D28D9F1BE54E150086B3A1 /* Storyboard.storyboard */,
@@ -440,7 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				740F9A701BE34DAF00035FB9 /* SolarData.swift in Sources */,
+				74AB295B1BEC7C1A00799C7C /* SolarData.swift in Sources */,
 				740F9A171BE34D6700035FB9 /* ViewController.swift in Sources */,
 				740F9A151BE34D6700035FB9 /* AppDelegate.swift in Sources */,
 			);
@@ -469,6 +470,7 @@
 				740F9A541BE34D6800035FB9 /* NotificationController.swift in Sources */,
 				740F9A521BE34D6800035FB9 /* ExtensionDelegate.swift in Sources */,
 				740F9A581BE34D6800035FB9 /* ComplicationController.swift in Sources */,
+				74AB295A1BEC7C0300799C7C /* SolarData.swift in Sources */,
 				740F9A501BE34D6800035FB9 /* InterfaceController.swift in Sources */,
 				740F9A561BE34D6800035FB9 /* GlanceController.swift in Sources */,
 			);

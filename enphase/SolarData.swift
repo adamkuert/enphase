@@ -7,21 +7,14 @@
 //
 
 import Foundation
-import UIKit
+
 
 class SolarData {
     let data_url = "https://enlighten.enphaseenergy.com/pv/public_systems/752126/today"
 //    let data_url = "http://files.kuert.net/enphase/data.json"
+//    let data_url = "https://enlighten-enphaseenergy-com-0yksu4dp6cl7.runscope.net/pv/public_systems/752126/today"
     
     init() {}
-    
-//    init(fromPath path:String){
-//        do {
-//            data = try String(contentsOfFile: path)
-//        } catch let error as NSError{
-//            print("Error \(error)")
-//        }
-//    }
     
     func jsonAsDictionary(str:String) -> NSDictionary {
         do {
@@ -48,21 +41,45 @@ class SolarData {
         return total
     }
     
+    func getStartTime(dict:NSDictionary) -> NSInteger {
+        let energy: NSArray = (dict["energy"] as? NSArray)!
+        let firstElement: NSDictionary = (energy[0] as? NSDictionary)!
+        let startTime = firstElement["start_time"] as? NSInteger!
+        return startTime!
+    }
+    
+    func getIntervalLength(dict:NSDictionary) -> NSInteger {
+        let energy: NSArray = (dict["energy"] as? NSArray)!
+        let firstElement: NSDictionary = (energy[0] as? NSDictionary)!
+        let interval = firstElement["interval_length"] as? NSInteger!
+        return interval!
+    }
+    
+    func getProduction(dict:NSDictionary) -> NSArray {
+        let energy: NSArray = (dict["energy"] as? NSArray)!
+        let firstElement: NSDictionary = (energy[0] as? NSDictionary)!
+        let production = firstElement["production"] as? NSArray!
+        return production!
+    }
+    
+    func asKWH(watts:NSInteger) -> String {
+        return String(format: "%.1f", Double(watts)/1000)
+    }
+    
     func getData(withCallback callback: (NSDictionary) -> Void) {
         if let url = NSURL(string: data_url) {
             
             let session = NSURLSession.sharedSession()
             
-            let task = session.dataTaskWithURL(url, completionHandler: { (content, response, error) -> Void in
+            let request = NSMutableURLRequest(URL: url)
+            let task = session.dataTaskWithRequest(request, completionHandler: { (content, response, error) -> Void in
                 if error != nil {
                     print("error: \(error!.localizedDescription): \(error!.userInfo)")
-                }
-                else if content != nil {
+                } else if content != nil {
+                    print(content)
                     if let str = NSString(data: content!, encoding: NSUTF8StringEncoding) {
                         let dict = self.jsonAsDictionary(str as String)
-                        dispatch_async(dispatch_get_main_queue()) {
-                            callback(dict)
-                        }
+                        callback(dict)
                     }
                     else {
                         print("unable to convert data to text")

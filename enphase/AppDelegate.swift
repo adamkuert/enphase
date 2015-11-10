@@ -15,16 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Every 15 mins
-        UIApplication.sharedApplication().setMinimumBackgroundFetchInterval(60*15)
+        UIApplication.sharedApplication().setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
+        
+//        print("Application did launch")
+//        if let vc = window?.rootViewController as? ViewController {
+//            vc.getData()
+//        }
+        
         return true
     }
     
     func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
-        print("Background fetch")
-        if let vc = window?.rootViewController as? ViewController {
-            vc.getDataFromBackground(withCompletionHandler: completionHandler)
-        }
+//        print("Background fetch")
+//        if let vc = window?.rootViewController as? ViewController {
+//            vc.getDataFromBackground(withCompletionHandler: completionHandler)
+//        }
     }
     
     func applicationWillResignActive(application: UIApplication) {
@@ -39,10 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-        print("Entering foreground")
-        if let vc = window?.rootViewController as? ViewController {
-            vc.getData()
-        }
+//        print("Entering foreground")
+//        if let vc = window?.rootViewController as? ViewController {
+//            vc.getData()
+//        }
     }
     
     func applicationDidBecomeActive(application: UIApplication) {

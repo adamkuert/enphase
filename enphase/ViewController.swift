@@ -13,8 +13,11 @@ class ViewController: UIViewController, WCSessionDelegate {
     
     var session: WCSession!
     
-    let solar_data = SolarData()
+    var watts: Int!
     
+    var fetch_count = 0
+    
+    @IBOutlet weak var ui_fetch_count: UILabel!
     @IBOutlet weak var ui_label_total: UILabel!
     @IBOutlet weak var ui_button: UIButton!
     
@@ -27,51 +30,68 @@ class ViewController: UIViewController, WCSessionDelegate {
             session.delegate = self;
             session.activateSession()
         }
-        
-        getData()
     }
-    
-    func getData() {
-        ui_label_total.text = "fetching..."
-        solar_data.getData(withCallback: handleResult)
-    }
-    
-    func getDataFromBackground(withCompletionHandler completionHandler: (UIBackgroundFetchResult)-> Void){
-        ui_label_total.text = "fetching..."
-        solar_data.getData(withCallback: { (result: NSDictionary) -> Void in
-            self.handleResult(result)
-            completionHandler(.NewData)
-        })
-    }
-    
-    @IBAction func buttonPressed(sender: UIButton) {
-        getData()
-    }
-    
-    func handleResult(result: NSDictionary){
-        let watts = solar_data.getTotal(result)
-//        let watts = arc4random_uniform(10000)
-        print("Fetched \(watts) watts")
-        let kilowatts = String(format: "%.1f", Double(watts)/1000)
-        
-        // Update App UI
-        ui_label_total.text = "\(kilowatts) kWh"
-        
-        // Update Watch Data
-        sendData(String(watts))
-        
-    }
-    
-    func sendData(data: String){
-        let context = ["data": data]
-        print("Sending data: \(data)")
-        do {
-            try session.updateApplicationContext(context)
-        } catch let error {
-            print("Failed to set session context")
-            print(error)
-        }
-    }
+
+//    func getData() {
+//        SolarData().getData(withCallback: { (result: NSDictionary) -> Void in
+//            // Proccess and store results
+//            self.handleResult(result)
+//
+//            // Update App UI
+//            self.updateUI()
+//            
+//            // Update Watch Data
+//            self.sendData()
+//        })
+//    }
+//    
+//    func getDataFromBackground(withCompletionHandler completionHandler: (UIBackgroundFetchResult)-> Void){
+//        fetch_count += 1
+//        SolarData().getData(withCallback: { (result: NSDictionary) -> Void in
+//            // Proccess and store results
+//            self.handleResult(result)
+//            
+//            // Update Watch Data
+//            self.sendData()
+//            
+//            // Tell the system we're done
+//            completionHandler(.NewData)
+//        })
+//    }
+//    
+//    @IBAction func buttonPressed(sender: UIButton) {
+//        getData()
+//    }
+//    
+//    func handleResult(result: NSDictionary){
+//        let total = SolarData().getTotal(result)
+////        let total = arc4random_uniform(10000)
+//        print("Fetched \(total) watts")
+//        watts = Int(total)
+//    }
+//    
+//    func updateUI(){
+//        let kilowatts = String(format: "%.1f", Double(watts)/1000)
+//        dispatch_async(dispatch_get_main_queue()) {
+//            self.ui_fetch_count.text = "\(self.fetch_count)"
+//            self.ui_label_total.text = "\(kilowatts) kWh"
+//        }
+//    }
+//    
+//    func sendData(){
+//        if (session.paired) {
+//            print("Sending data: \(String(watts))")
+//            let context = ["data": String(watts)]
+//            do {
+//                try session.updateApplicationContext(context)
+//            } catch let error {
+//                print("Failed to set session context")
+//                print(error)
+//            }
+//        } else {
+//            print("Device not paired")
+//        }
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
